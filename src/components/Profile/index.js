@@ -6,7 +6,7 @@ function Profile() {
 
     const { githubState } = useGithub();
     const { WrapperProfile, WrapperImage, WrapperData, WrapperUserGeneric } = Styled; 
-    console.log(githubState);
+    // console.log(githubState);
 
     return (
         <WrapperProfile>

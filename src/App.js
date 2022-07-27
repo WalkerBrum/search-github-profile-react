@@ -1,4 +1,4 @@
-import { Header, Profile } from './components';
+import { Header, Profile, Nav } from './components';
 import GithubProvider from './providers/githubProvider';
 
 
@@ -7,6 +7,7 @@ function App() {
     <GithubProvider>
         <Header />
         <Profile />
+        <Nav />
     </GithubProvider>
   );
 }

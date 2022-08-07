@@ -3,7 +3,16 @@ import styled from 'styled-components';
 export const WrapperNav = styled.div`
     display: flex;
     justify-content: flex-start;
-    margin: 10px;
+    margin: 0 30px;
+
+    .button-click {
+        border: 1px solid green;
+        padding: 15px 0px;
+    }
+
+    .button-no-click {
+        padding: 15px 0px;
+    }
 
     button {
         height: 45px;
@@ -18,8 +27,7 @@ export const WrapperNav = styled.div`
         transition: 0.5s ease-in-out;
     
         &:hover {
-            transition: 0.5s ease-in-out;
             background-color: green;
-            box-shadow: green 0px 0px 15px 0px;
         }
+   
 `

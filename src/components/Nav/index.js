@@ -1,24 +1,45 @@
 import { WrapperNav } from "./styled";
 import useGithub from "../../hooks/githubHooks";
+import { useState } from 'react';
 
 
 function Nav() {
 
-    const { githubState, getUserRepos } = useGithub();
+    const { githubState, getUserRepos, getUserStarred } = useGithub();
+    const [activeRepos, setActiveRepos ] = useState(false)
+    const [activeStarred, setActiveStarred ] = useState(false)
 
     const setRepos = () => {
         const username = githubState.username;
 
         if (!(username.length > 0)) return;
 
+        setActiveRepos(true);
+        setActiveStarred(false);
+        console.log(activeRepos)
+
         return getUserRepos(username);
     }
+
+    const setStarred = () => {
+        const username = githubState.username;
+
+        if (!(username.length > 0)) return;
+
+        setActiveRepos(false);
+        setActiveStarred(true);
+
+        return getUserStarred(username);
+    }
     
-    console.log(githubState.repositories)
     return (
         <WrapperNav>
-            <button onClick={setRepos}>Repositories</button>
-            <button>Starred</button>
+            <div className={activeRepos ? "button-click" :  "button-no-click"}>
+                <button onClick={setRepos}>Repositories</button>                       
+            </div>
+            <div className={activeStarred ? "button-click" :  "button-no-click"}>
+                <button onClick={setStarred}>Starred</button>
+            </div>
         </WrapperNav>
     )
 }

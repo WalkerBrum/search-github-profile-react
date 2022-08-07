@@ -1,22 +1,22 @@
 import { WrapperRepos } from "../Layout/repos";
 import useGithub from '../../hooks/githubHooks';
 
-function Repositories() {
+function Starred() {
 
     const { githubState } = useGithub();
 
     return (
         <WrapperRepos>
-            {githubState.repositories.map((repos, index) =>
+            {githubState.starred.map((starred, index) =>
                 <div className="layout-inside" key={index}>
                     <li>
-                        {repos.name}
+                        {starred.name}
                     </li>
                     <p>
                         Full Name:
                     </p>
-                    <a href={`https://github.com/${repos.full_name}`} target="_blank" rel="noreferrer">
-                        {repos.full_name}
+                    <a href={`https://github.com/${starred.full_name}`} target="_blank" rel="noreferrer">
+                        {starred.full_name}
                     </a>
                 </div>
             )}
@@ -25,4 +25,4 @@ function Repositories() {
 };
 
 
-export default Repositories;
+export default Starred;

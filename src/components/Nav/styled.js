@@ -22,7 +22,7 @@ export const WrapperNav = styled.div`
         font-size: 1.2rem;
         border: 1px solid gray;
         padding: 10px 20px;
-        margin: 0 30px;
+        margin: 0 20px;
         cursor: pointer;
         transition: 0.5s ease-in-out;
     

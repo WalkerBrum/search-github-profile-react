@@ -6,7 +6,7 @@ export const WrapperProfile = styled.div`
 
     @media (max-width: 640px) {
         display: block;
-        margin: 10px
+        margin: 10px;
     }
 `
 
@@ -14,6 +14,7 @@ export const WrapperImage = styled.div`
     margin: 10px 20px 10px 10px;
     border: solid 1px black;
     padding: 10px;
+    width: 17%;
 
     img {
         border-radius: 50%;
@@ -21,8 +22,8 @@ export const WrapperImage = styled.div`
     }
 
     @media (max-width: 640px) {
-        width: 100%;
         display: flex;
+        width: 95%;
         justify-content: center;
     }
 `
@@ -30,7 +31,7 @@ export const WrapperImage = styled.div`
 export const WrapperData = styled.div`
     margin: 10px 30px 10px 10px;
     border: solid 1px black;
-    width: 100%;
+    width: 83%;
     padding: 10px 20px;
     line-height: 1.6rem;
 
@@ -39,6 +40,10 @@ export const WrapperData = styled.div`
         text-transform: uppercase;
         margin-bottom: 20px;
         font-size: 1.6rem;
+    }
+
+    @media (max-width: 640px) {
+        width: 95%;
     }
 `
 

@@ -7,7 +7,7 @@ function Repositories() {
 
     return (
         <WrapperRepos>
-            {githubState.repositories.map((repos, index) =>
+            {githubState.loading && githubState.repositories.map((repos, index) =>
                 <div className="layout-inside" key={index}>
                     <li>
                         {repos.name}

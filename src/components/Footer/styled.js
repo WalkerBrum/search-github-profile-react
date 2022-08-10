@@ -14,7 +14,7 @@ export const WrapperFooter = styled.div`
 export const WrapperButtons = styled.div`
     display: flex;
     gap: 10px;
-    margin: 10px;
+    margin: 20px;
 
     button {
         cursor: pointer;

@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const WrapperProfile = styled.div`
     display: flex;
     margin: 20px;
+
+    @media (max-width: 640px) {
+        display: block;
+        margin: 10px
+    }
 `
 
 export const WrapperImage = styled.div`
@@ -13,6 +18,12 @@ export const WrapperImage = styled.div`
     img {
         border-radius: 50%;
         height: 200px;
+    }
+
+    @media (max-width: 640px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 `
 
@@ -29,8 +40,6 @@ export const WrapperData = styled.div`
         margin-bottom: 20px;
         font-size: 1.6rem;
     }
-
-    
 `
 
 export const WrapperUserGeneric = styled.div`

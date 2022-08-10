@@ -4,7 +4,7 @@ import { createContext, useState, useCallback } from "react";
 
 export const GithubContext = createContext({
     username: '',
-    loading: false,
+    loading: undefined,
     hasUser: false,
     user: {},
     repositories: [],
@@ -14,7 +14,7 @@ export const GithubContext = createContext({
 function GithubProvider({ children }) {
     const [githubState, setGithubState] = useState({
         username: '',
-        loading: false,
+        loading: undefined,
         hasUser: false,
         user: {
             id: undefined,
@@ -39,6 +39,7 @@ function GithubProvider({ children }) {
             ...prevState,
             username: username,
             hasUser: true,
+            loading: undefined,
         }));
 
         api.get(`users/${username}`)
@@ -64,7 +65,6 @@ function GithubProvider({ children }) {
         .finally(() => {
             setGithubState((prevState) => ({
                 ...prevState,
-                loading: !prevState.loading,
             }));
         });
     };

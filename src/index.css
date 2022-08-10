@@ -22,8 +22,11 @@ code {
 h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin: 10px;
   align-items: center;
   height: 42vh;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+

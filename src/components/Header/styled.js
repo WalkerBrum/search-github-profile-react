@@ -25,10 +25,25 @@ export const Wrapper = styled.div`
         margin: 0px 20px;
         cursor: pointer;
         transition: 0.5s ease-in-out;
+    }
 
-    &:hover {
+    button:hover {
         transition: 0.5s ease-in-out;
         background-color: rgb(228, 16, 93);
         box-shadow: rgb(228 16 93) 0px 0px 15px 0px;
+    }
+
+    @media (max-width: 640px){
+        margin: 20px 10px;
+
+        input {
+            width: 70%;
+        }
+    
+        button {
+            width: 30%;
+            margin-left: 10px;
+            margin-right: 0
+        }  
     }
 }`

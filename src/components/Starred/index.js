@@ -7,7 +7,7 @@ function Starred() {
 
     return (
         <WrapperRepos>
-            {githubState.starred.map((starred, index) =>
+            {(githubState.loading === false) && githubState.starred.map((starred, index) =>
                 <div className="layout-inside" key={index}>
                     <li>
                         {starred.name}

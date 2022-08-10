@@ -16,7 +16,6 @@ function Nav() {
 
         setActiveRepos(true);
         setActiveStarred(false);
-        console.log(activeRepos)
 
         return getUserRepos(username);
     }
@@ -34,10 +33,10 @@ function Nav() {
     
     return (
         <WrapperNav>
-            <div className={activeRepos ? "button-click" :  "button-no-click"}>
+            <div className={activeRepos && githubState.loading ? "button-click" :  "button-no-click"}>
                 <button onClick={setRepos}>Repositories</button>                       
             </div>
-            <div className={activeStarred ? "button-click" :  "button-no-click"}>
+            <div className={activeStarred && (githubState.loading === false) ? "button-click" :  "button-no-click"}>
                 <button onClick={setStarred}>Starred</button>
             </div>
         </WrapperNav>

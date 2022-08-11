@@ -36,9 +36,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 # 📷 Demonstração da Aplicação
 
-<img src="src/Images/page-home.png" title="Print screen da aplicação da home"/>
-<img src="src/Images/page-login.png" title="Print screen da aplicação de login"/>
-<img src="src/Images/page-cadaster.png" title="Print screen da aplicação de cadastro"/>
+<img src="src/images/Home.png" title="Print screen da aplicação da página inicial"/>
+<img src="src/images/Profile.png" title="Print screen da aplicação do perfil pesquisado"/>
+<img src="src/images/Repositories.png" title="Print screen da aplicação dos repositories renderzados"/>
+<img src="src/images/Starred.png" title="Print screen da aplicação dos starred renderizados"/>
 
 
 ## **Autor e Agradecimento**

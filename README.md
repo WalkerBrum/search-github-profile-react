@@ -6,7 +6,7 @@ Aplicação front-end para interação visual com a API do Github para buscar pe
 <hr>
 
 ## **Acessar Aplicação**
-[https://buscador-perfis-github-git-main-walkerbrum.vercel.app/](https://buscador-perfis-github-git-main-walkerbrum.vercel.app/)
+[https://buscador-perfis-github.vercel.app/](https://buscador-perfis-github.vercel.app/)
 
 <hr>
 

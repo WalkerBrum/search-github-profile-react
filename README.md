@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# **Sistema Buscar Usuário do Github** 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Descrição**
+Aplicação front-end para interação visual com a API do Github para buscar perfis de usuários e seus respositórios;
 
-## Available Scripts
+<hr>
 
-In the project directory, you can run:
+## **Acessar Aplicação**
+[https://buscador-perfis-github-git-main-walkerbrum.vercel.app/](https://buscador-perfis-github-git-main-walkerbrum.vercel.app/)
 
-### `npm start`
+<hr>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Objetivos**
+- Criar aplicação com ReactJs utilizando Context API, Styled Components e Hooks;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Tecnologias**
+Este projeto foi desenvolvido com as seguintes tecnologias: 
+- JavaScript;
+- ReactJs;
+- React Hooks;
+- React Context API;
+- Styled Components;
+- Axios;
 
-### `npm test`
+<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Requerimentos**
+- Node.js;
+- npm ou yarn;
 
-### `npm run build`
+## **Instalação**
+`npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Clone do Projeto**
+`git clone https://github.com/WalkerBrum/search-github-profile-react.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 📷 Demonstração da Aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="src/Images/page-home.png" title="Print screen da aplicação da home"/>
+<img src="src/Images/page-login.png" title="Print screen da aplicação de login"/>
+<img src="src/Images/page-cadaster.png" title="Print screen da aplicação de cadastro"/>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Autor e Agradecimento**
+Eu Walker Lobato como desenvolvedor do projeto sou grato por poder participar desse desafio, pois foi um grande oportunidade para conhecer funcionalidades bibliotecas novas do react como ContextAPI, useCallback e Styled Compoents, além de evoluir nas que já conhecia, com isso, contribuindo para o desenvolvimento das minhas hard skills, aprimorando os meus conhecimentos na construção de aplicações web.

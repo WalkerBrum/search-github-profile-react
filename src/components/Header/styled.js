@@ -5,8 +5,12 @@ export const Wrapper = styled.div`
     justify-content: center;
     margin: 20px;
 
+    form {
+        width: 100%;
+    }
+
     input {
-        width: 85%;
+        width: 100%;
         height: 40px;
         border-radius: 10px;
         padding: 22px;
@@ -22,7 +26,7 @@ export const Wrapper = styled.div`
         border-radius: 10px;
         font-size: 1.2rem;
         border: none;
-        margin: 0px 20px;
+        margin-left: 20px;
         cursor: pointer;
         transition: 0.5s ease-in-out;
     }
@@ -37,7 +41,7 @@ export const Wrapper = styled.div`
         margin: 20px 10px;
 
         input {
-            width: 70%;
+            width: 100%;
         }
     
         button {

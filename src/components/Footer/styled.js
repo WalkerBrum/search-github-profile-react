@@ -9,7 +9,12 @@ export const WrapperFooter = styled.div`
     gap: 5px;
     background: black;
     color: white;
-    padding: 50.5px;
+    padding: 40px;
+    height: 34.4vh;
+
+    h3 {
+        margin-top: 20px;
+    }
 `
 
 export const WrapperButtons = styled.div`

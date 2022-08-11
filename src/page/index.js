@@ -6,16 +6,16 @@ function Page() {
     const { githubState } = useGithub();
     
     return (
-        <div>
+        <div className='page'>
             <Header />
             {githubState.hasUser ?
               (<Profile />)
-                :
+                    :
               (<h1>Pesquise um perfil do Github</h1>)
             }
             {githubState.hasUser ?
               (<Nav />)
-              :
+                  :
               (<div />)
             }
             {githubState.loading ?

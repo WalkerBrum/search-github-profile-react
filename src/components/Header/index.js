@@ -7,21 +7,24 @@ function Header() {
     const { getUser } = useGithub();
     const [usernameForSearch, setUsernameForSearch] = useState();
 
-    const submit = () => {
+    const submit = (event) => {
+        event.preventDefault();
+
         if (!usernameForSearch) return;
 
-        return getUser(usernameForSearch);
+        getUser(usernameForSearch);
     }
 
     return (
         <Wrapper>
-            <input 
-                type="text" 
-                placeholder="Pesquisar perfil"
-                onChange={(event) => setUsernameForSearch(event.target.value)} />
-            <button 
-                onClick={submit} 
-                username={usernameForSearch}>
+            <form onSubmit={submit}>
+                <input
+                    type="text"
+                    placeholder="Pesquisar perfil"
+                    onSubmit={submit}
+                    onChange={(event) => setUsernameForSearch(event.target.value)} />
+            </form>
+            <button onClick={submit}>
                     Buscar
             </button>
         </Wrapper>
